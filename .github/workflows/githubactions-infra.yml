@@ -10,7 +10,7 @@ permissions:
       pull-requests: write # for GitHub bot to comment PR
 env:
   TF_LOG: INFO
-  AWS_REGION: ${{ secrets.AWS_REGION }}
+  AWS_REGION: ${{ secrets.awsregion }}
   AWS_ACCESS_KEY: ${{ secrets.AWSACCESSKEY }}
   AWS_SECRET_ACCESS_KEY: ${{ secrets.AWSSECRETACCESSKEY }}
   role-session-name: GitHub-OIDC-TERRAFORM      
@@ -22,7 +22,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./infra
+        working-directory: /infra
     steps:
 
     - name: Checkout Repo
@@ -56,8 +56,8 @@ jobs:
       id: plan
       run: terraform plan -no-color
 
-    - name: Terraform destroy
+    - name: Terraform apply
       id: apply 
-      run: terraform destroy -auto-approve
+      run: terraform apply --auto-approve
       
     
