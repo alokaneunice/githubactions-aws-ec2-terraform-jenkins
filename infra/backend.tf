@@ -1,7 +1,7 @@
 terraform {
   backend "s3" {
-    bucket = "jenkins-automation-server"
-    region = "eu-west-2"
-    key    = "gihubactions2/terraform.tfstate"
+    bucket = "tweek-bucket345426"
+    region = "us-east-2"
+    key    = "githubactions2/terraform.tfstate"
   }
 }

@@ -1,4 +1,4 @@
-name: Infrastructure Provisioning with Gihubactions
+name: Infrastructure Provisioning with Githubactions
 
 on:
   push:

@@ -37,7 +37,7 @@ Before starting the project, ensure you have the following prerequisites:
 
 - GitHub - a repository for your project code
 
-https://github.com/clement2019/githubactions-aws-ec2-terraform-jenkins.git
+https://github.com/alokaneunice/githubactions-aws-ec2-terraform-jenkins
 
 
 ### Project Workflow
